@@ -20,3 +20,4 @@ class TestDict(unittest.TestCase):
         self.assertFalse(solution.isvalid('1a1s\n'))
 
     def test_strsplit(self):
+        pass
