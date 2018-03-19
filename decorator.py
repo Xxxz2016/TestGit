@@ -3,7 +3,7 @@
 def log(level, *args, **kvargs):
     def inner(func):
         '''
-        可变参数
+        可变参数 个数不一定
         * 无名字参数
         ** 有名字参数 关键字参数
         '''

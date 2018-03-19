@@ -223,18 +223,37 @@ def demo_re():
     # p5 = re.compile('\d{4}-\d{2}-\d{2}')
     # print 6, p5.findall(str)
 
-    str1 = '000sancjoi1io22rn2k34n1n4o'
-    str2 = '000@sancjoi1io22rn2k34n1n4o'
+    str1 = ''
+    str2 = '000sancjoi1io22rn2k34n1n4o'
 
-    # 有无非数字字母
-    p6 = re.compile('[\W]+')
-    print 7, p6.search(str1), p6.search(str2)
+    # 出现1次或多次非数字字母字符，或空字符串
+    p6 = re.compile('([\W]+)|^$')
+    # print 7, p6.search(str1), p6.search(str2)
+
+    if p6.search(str1) is None:
+        print 'str：'+str1, '合法，全为数字字母'
+    else:
+        print 'str：'+str1, '不合法'
+
+    if str1.isalnum():
+        print 'str：' + str1, '合法，全为数字字母'
+    else:
+        print 'str：' + str1, '不合法'
 
     # 分割数字和字母
-    p7 = re.compile('[\d]+')
-    p8 = re.compile('[a-zA-Z]+')
-    print 8, int(''.join(p7.findall(str1)))
-    print 9, ''.join(p8.findall(str1))
+    # p7 = re.compile('[\d]+')
+    # p8 = re.compile('[a-zA-Z]+')
+    # print 8, int(''.join(p7.findall(str1)))
+    # print 9, ''.join(p8.findall(str1))
+    # p7 = re.compile('[\d]+|[a-zA-Z]+')
+    # print 8, p7.findall(str2)
+    #
+    # print 9, str2.lstrip(p7.findall(str2)[0])
+    #
+    # print 9, str2.lstrip(p7.findall(str2)[0])
+    #
+    # print ''[0]
+
 
 
 if __name__ == '__main__':
