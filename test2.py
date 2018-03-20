@@ -240,6 +240,13 @@ def demo_re():
     else:
         print 'str：' + str1, '不合法'
 
+    print "IV".isdigit()
+    print cmp(len('123'),len('0123'))
+
+    if -1:
+        print -1
+
+
     # 分割数字和字母
     # p7 = re.compile('[\d]+')
     # p8 = re.compile('[a-zA-Z]+')
