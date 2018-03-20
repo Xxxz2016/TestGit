@@ -85,9 +85,9 @@ class TestSolution(unittest.TestCase):
         self.assertEquals(solution.cmpstr('abc123', '123abc'), 1)
         # 左一子串相等时
         self.assertEquals(solution.cmpstr('123', '123abc'), -1)
-		self.assertEquals(solution.cmpstr('123abc', '123'), 1)
-		self.assertEquals(solution.cmpstr('123abc', '123abc'), 0)
-		self.assertEquals(solution.cmpstr('B1', 'B01'), -1)
-		self.assertEquals(solution.cmpstr('B01', 'B2'), -1)
-		self.assertEquals(solution.cmpstr('B2', 'B11'), -1)
+        self.assertEquals(solution.cmpstr('123abc', '123'), 1)
+        self.assertEquals(solution.cmpstr('123abc', '123abc'), 0)
+        self.assertEquals(solution.cmpstr('B1', 'B01'), -1)
+        self.assertEquals(solution.cmpstr('B01', 'B2'), -1)
+        self.assertEquals(solution.cmpstr('B2', 'B11'), -1)
 		
