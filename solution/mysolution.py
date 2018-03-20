@@ -71,5 +71,4 @@ if __name__ == '__main__':
         print '********两个字符串大小比较开始**********'
         str1 = raw_input('请输入第一个字符串：')
         str2 = raw_input('请输入第二个字符串：')
-
         print solution.cmpstr(str1, str2)
